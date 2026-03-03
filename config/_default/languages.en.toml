@@ -3,7 +3,7 @@ languageName = "English"
 weight = 1
 
 [params.author]
-  name = "David Adrián"
+  name = "David Cañones"
   image = "img/author.jpg"
   headline = "CTO & Co-Founder @ WhiteBox"
   bio = "I build Data and AI companies. CTO of a group of three tech companies (WhiteBox, DataMarket, FEN Technology). Writing about Python, Machine Learning, and Data Engineering."
@@ -13,4 +13,4 @@ weight = 1
     { linkedin = "https://www.linkedin.com/in/davidadrian/" },
   ]
 
-title = "David Adrián"
+title = "David Cañones"
