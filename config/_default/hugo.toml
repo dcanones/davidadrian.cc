@@ -1,0 +1,24 @@
+baseURL = "https://davidadrian.cc/"
+defaultContentLanguage = "en"
+theme = "blowfish"
+enableRobotsTXT = true
+[pagination]
+  pagerSize = 10
+summaryLength = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    style = "monokai"
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+
+[taxonomies]
+  tag = "tags"

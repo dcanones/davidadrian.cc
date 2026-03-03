@@ -1,0 +1,10 @@
+/* Center figures and captions */
+.prose figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prose figcaption {
+  text-align: center;
+}

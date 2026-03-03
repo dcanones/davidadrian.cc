@@ -1,0 +1,64 @@
+{{/* Used by
+  1. list.html and term.html (when the cardView option is not enabled)
+  2. Recent articles template (when the cardView option is not enabled)
+  3. Shortcode list.html
+
+  Overridden to hide thumbnails globally from the list view.
+  Feature images are still used for OG/social cards.
+*/}}
+{{ $constrainItemsWidth := site.Params.list.constrainItemsWidth | default false }}
+
+{{ $cardClasses := "flex flex-col md:flex-row relative" }}
+{{ $cardContentClasses := "" }}
+
+{{ if .Params.showCards | default site.Params.list.showCards }}
+  {{ $cardClasses = printf "%s overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600" $cardClasses }}
+  {{ $cardContentClasses = printf "%s p-4" $cardContentClasses }}
+{{ else }}
+  {{ $cardContentClasses = printf "%s mt-3 md:mt-0" $cardContentClasses }}
+{{ end }}
+
+{{ if $constrainItemsWidth }}
+  {{ $cardClasses = printf "%s max-w-prose" $cardClasses }}
+{{ end }}
+
+{{ $page := .Page }}
+
+<article class="article-link--simple {{ $cardClasses }}">
+  <div class="{{ $cardContentClasses }}">
+    <header class="items-center text-start text-xl font-semibold">
+      <a
+        {{ with $page.Params.externalUrl }}
+          href="{{ . }}" target="_blank" rel="external"
+        {{ else }}
+          href="{{ $page.RelPermalink }}"
+        {{ end }}
+        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
+        <h2>
+          {{ .Title | emojify }}
+          {{ if .Params.externalUrl }}
+            <span class="cursor-default align-top text-xs text-neutral-400 dark:text-neutral-500">
+              <span class="rtl:hidden">&#8599;</span>
+              <span class="ltr:hidden">&#8598;</span>
+            </span>
+          {{ end }}
+        </h2>
+      </a>
+      {{ if and .Draft .Site.Params.article.showDraftLabel }}
+        <div class="ms-2">{{ partial "badge.html" (i18n "article.draft" | emojify) }}</div>
+      {{ end }}
+      {{ if templates.Exists "partials/extend-article-link.html" }}
+        {{ partial "extend-article-link.html" . }}
+      {{ end }}
+    </header>
+    <div class="text-sm text-neutral-500 dark:text-neutral-400">
+      {{ partial "article-meta/basic.html" . }}
+    </div>
+    {{ if .Params.showSummary | default (site.Params.list.showSummary | default false) }}
+      <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
+        {{ .Summary | plainify }}
+      </div>
+    {{ end }}
+  </div>
+  <div class="px-6 pt-4 pb-2"></div>
+</article>

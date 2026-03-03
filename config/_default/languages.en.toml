@@ -1,0 +1,16 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+
+[params.author]
+  name = "David Adrián"
+  image = "img/author.jpg"
+  headline = "CTO & Co-Founder @ WhiteBox"
+  bio = "I build Data and AI companies. CTO of a group of three tech companies (WhiteBox, DataMarket, FEN Technology). Writing about Python, Machine Learning, and Data Engineering."
+  links = [
+    { x-twitter = "https://x.com/dcanones" },
+    { github = "https://github.com/dcanones" },
+    { linkedin = "https://www.linkedin.com/in/davidadrian/" },
+  ]
+
+title = "David Adrián"

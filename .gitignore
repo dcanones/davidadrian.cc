@@ -1,0 +1,8 @@
+public/
+resources/
+.hugo_build.lock
+.DS_Store
+.claude/
+
+# Draft posts — kept local only, never pushed to the public repo
+content/blog/ovarian-cancer-misdiagnosis-hospital-santa-cristina/

@@ -1,0 +1,46 @@
+colorScheme = "ocean"
+defaultAppearance = "dark"
+autoSwitchAppearance = true
+
+enableSearch = true
+enableCodeCopy = true
+
+mainSections = ["blog"]
+
+description = "David Adrián - CTO & Co-Founder at WhiteBox. Writing about AI, Data Science, Python, and Machine Learning."
+defaultSocialImage = "/img/social-card.png"
+robots = "index, follow"
+enableStructuredBreadcrumbs = true
+
+[homepage]
+  layout = "profile"
+  homepageImage = ""
+  showRecent = true
+  showRecentItems = 5
+  showMoreLink = true
+  showMoreLinkDest = "/blog"
+  cardView = false
+  cardViewScreenWidth = false
+  layoutBackgroundBlur = false
+
+[article]
+  showDate = true
+  showViews = false
+  showLikes = false
+  showDateUpdated = true
+  showAuthor = false
+  showReadingTime = true
+  showTableOfContents = true
+  showTaxonomies = true
+  showWordCount = false
+  sharingLinks = ["twitter", "linkedin", "reddit", "email"]
+  showComments = false
+  showSummary = true
+
+[list]
+  showCards = false
+  groupByYear = true
+  cardView = false
+
+[taxonomy]
+  showTermCount = true

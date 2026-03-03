@@ -1,0 +1,37 @@
+# David Adrián - Personal Website
+
+> David Adrián is a CTO & Co-Founder at WhiteBox, DataMarket, and FEN Technology. He writes about AI, Data Science, Python, Machine Learning, and Data Engineering.
+
+## About
+
+- Name: David Adrián Cañones Castellano
+- Role: CTO & Co-Founder
+- Companies: WhiteBox (AI & Software consulting), DataMarket (DaaS platform), FEN Technology (Deep-tech R&D funding)
+- Location: Madrid, Spain
+- Website: https://davidadrian.cc
+- LinkedIn: https://www.linkedin.com/in/davidadrian/
+- GitHub: https://github.com/dcanones
+- X/Twitter: https://x.com/dcanones
+
+## Sections
+
+- [Blog](https://davidadrian.cc/blog/): Technical articles about Data Science, Python, Machine Learning, and AI
+- [CV](https://davidadrian.cc/cv/): Full curriculum vitae and professional experience
+- [Consulting](https://whiteboxml.com): AI & Data consulting services via WhiteBox
+
+## Blog Posts
+
+- [The definitive guide to Python virtual environments with conda](https://davidadrian.cc/blog/the-definitive-guide-to-python-virtual-environments-with-conda/): Comprehensive tutorial on conda virtual environments — installation, management, sharing, packaging, and best practices.
+- [The online courses you must take to be a better Data Scientist](https://davidadrian.cc/blog/top-courses-data-science/): Curated list of the best online courses for Data Science, from Python to Deep Learning.
+- [The Definitive Data Scientist Environment Setup](https://davidadrian.cc/blog/definitive-data-scientist-setup/): Hardware and software setup guide for professional Data Science development environments.
+- [COVID-19 quarantine reflections - day 7](https://davidadrian.cc/blog/covid-19-quarantine-data-science-day-7/): How AI and Data Science can help mitigate a global pandemic.
+- [Analysis of the prices of high-speed train tickets in Spain](https://davidadrian.cc/blog/train-tickets-price-analysis/): Data analysis of AVE train ticket pricing using Python.
+- [Our experience as Lead Teachers at Ironhack](https://davidadrian.cc/blog/experience-lead-teachers-ironhack/): Teaching Data Science at Ironhack bootcamp.
+- [Save money self-hosting your own apps](https://davidadrian.cc/blog/save-money-going-self-hosted/): Guide to self-hosting alternatives to popular cloud services.
+- [Set up an Apache Spark cluster and integrate with Jupyter Notebook](https://davidadrian.cc/blog/how-to-spark-cluster-jupyter/): Step-by-step Spark cluster setup tutorial.
+- [Hadoop with Python](https://davidadrian.cc/blog/python-hadoop/): Tutorial on interacting with Hadoop using Python.
+- [Lessons learned from 5 years doing Data Science](https://davidadrian.cc/blog/data-science-lessons/): Reflections on 5 years in the Data Science field.
+
+## Topics
+
+Tutorials, Data Science, Machine Learning, Python, conda, Spark, Hadoop, self-hosting, teaching, analysis
