@@ -1,5 +1,5 @@
-colorScheme = "ocean"
-defaultAppearance = "dark"
+colorScheme = "brandbook"
+defaultAppearance = "light"
 autoSwitchAppearance = true
 
 enableSearch = true
