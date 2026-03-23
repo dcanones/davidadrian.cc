@@ -1,0 +1,30 @@
+{{ $recentArticles := 5 }}
+{{ $showMoreLinkDest := "/posts/" }}
+{{ if .Site.Params.homepage.showRecent | default false }}
+  {{ if index .Site.Params.homepage "showRecentItems" }}
+    {{ $recentArticles = .Site.Params.homepage.showRecentItems }}
+  {{ end }}
+  <h2 class="recent-heading mt-12 mb-8 text-neutral-400 dark:text-neutral-500">
+    {{ i18n "shortcode.recent_articles" | emojify }}
+  </h2>
+
+  {{ if and .Site.Params.homepage.cardView (not .Site.Params.homepage.cardViewScreenWidth) | default false }}
+    {{ partial "recent-articles/cardview.html" . }}
+  {{ else if and .Site.Params.homepage.cardView .Site.Params.homepage.cardViewScreenWidth | default false }}
+    {{ partial "recent-articles/cardview-fullwidth.html" . }}
+  {{ else }}
+    {{ partial "recent-articles/list.html" . }}
+  {{ end }}
+
+  {{ if .Site.Params.homepage.showMoreLink | default false }}
+    {{ if index .Site.Params.homepage "showRecentItems" }}
+      {{ $showMoreLinkDest = .Site.Params.homepage.showMoreLinkDest }}
+    {{ end }}
+    <div class="mt-10 flex justify-center">
+      <a href="{{ $showMoreLinkDest | relLangURL }}" class="btn-view-all">
+        {{ i18n "recent.show_more" | markdownify }}
+        <span aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  {{ end }}
+{{ end }}

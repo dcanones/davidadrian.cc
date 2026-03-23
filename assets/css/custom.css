@@ -136,3 +136,258 @@ body::before {
   background-repeat: repeat;
   background-size: 256px 256px;
 }
+
+/* ==============================================
+   REDESIGN: Homepage Profile
+   ============================================== */
+
+.profile-avatar-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-avatar {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.profile-avatar-wrap::after {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border-radius: 9999px;
+  border: 2px solid rgba(var(--color-primary-500), 0.25);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.profile-avatar-wrap:hover::after {
+  border-color: rgba(var(--color-primary-500), 0.6);
+  inset: -7px;
+}
+
+.profile-avatar-wrap:hover .profile-avatar {
+  transform: scale(1.02);
+}
+
+.profile-name {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-top: 0.5rem;
+}
+
+.profile-accent {
+  width: 48px;
+  height: 2px;
+  background: rgba(var(--color-primary-500), 0.6);
+  margin: 1rem auto;
+  border-radius: 1px;
+}
+
+.profile-headline {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin-top: 0;
+}
+
+.profile-bio {
+  max-width: 32rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+
+.profile-links .flex {
+  gap: 0.75rem;
+}
+
+.profile-links a {
+  transition: color 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.profile-links a:hover {
+  transform: translateY(-2px);
+  color: rgba(var(--color-primary-500), 1) !important;
+}
+
+/* ==============================================
+   REDESIGN: Article List Items
+   ============================================== */
+
+.article-item {
+  padding: 1rem 0 1rem 1rem;
+  border-left: 2px solid transparent;
+  transition: border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.article-item:hover {
+  border-left-color: rgba(var(--color-primary-500), 1);
+  background: rgba(var(--color-primary-50), 0.4);
+}
+
+.dark .article-item:hover {
+  background: rgba(var(--color-neutral-700), 0.2);
+}
+
+.article-item-meta {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.25rem;
+}
+
+.article-item-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  transition: color 0.2s ease;
+}
+
+.article-item:hover .article-item-title {
+  color: rgba(var(--color-primary-600), 1);
+}
+
+.dark .article-item:hover .article-item-title {
+  color: rgba(var(--color-primary-400), 1);
+}
+
+.article-item-summary {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+/* Tighter spacing for homepage recent articles */
+.recent-articles-list > * + * {
+  margin-top: 0;
+}
+
+/* ==============================================
+   REDESIGN: Recent Articles Section
+   ============================================== */
+
+.recent-heading {
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.recent-heading::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: rgba(var(--color-primary-500), 0.6);
+  border-radius: 1px;
+}
+
+.btn-view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.625rem 1.25rem;
+  border: 1.5px solid rgba(var(--color-primary-500), 0.4);
+  border-radius: 100px;
+  color: rgba(var(--color-primary-600), 1);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark .btn-view-all {
+  color: rgba(var(--color-primary-400), 1);
+  border-color: rgba(var(--color-primary-400), 0.4);
+}
+
+.btn-view-all:hover {
+  background: rgba(var(--color-primary-500), 0.08);
+  border-color: rgba(var(--color-primary-500), 0.7);
+}
+
+.dark .btn-view-all:hover {
+  background: rgba(var(--color-primary-400), 0.1);
+  border-color: rgba(var(--color-primary-400), 0.7);
+}
+
+/* ==============================================
+   REDESIGN: Article Page Enhancements
+   ============================================== */
+
+/* Article title */
+#single_header h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Blockquotes */
+.prose :where(blockquote):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  border-left: 3px solid rgba(var(--color-primary-500), 0.5);
+  background: rgba(var(--color-neutral-200), 0.3);
+  padding: 1rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+}
+
+.dark .prose :where(blockquote):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  background: rgba(var(--color-neutral-700), 0.2);
+}
+
+/* Horizontal rules */
+.prose :where(hr):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  border: none;
+  height: 2px;
+  width: 48px;
+  margin: 3rem auto;
+  background: rgba(var(--color-primary-500), 0.4);
+  border-radius: 1px;
+}
+
+/* Code blocks: subtle border */
+.prose :where(pre):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  border: 1px solid rgba(var(--color-neutral-200), 1);
+}
+
+.dark .prose :where(pre):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  border: 1px solid rgba(var(--color-neutral-700), 0.5);
+}
+
+/* Table of contents links */
+.toc a {
+  transition: color 0.15s ease;
+}
+
+.toc a:hover {
+  color: rgba(var(--color-primary-500), 1);
+}
+
+/* ==============================================
+   REDESIGN: Micro-interactions & Focus States
+   ============================================== */
+
+nav a {
+  transition: color 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid rgba(var(--color-primary-500), 0.5);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
