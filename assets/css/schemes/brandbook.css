@@ -1,0 +1,37 @@
+/* Brandbook scheme — David Cañones personal brand */
+:root {
+  /* Paper ↔ Graphite neutral gradient */
+  --color-neutral: 245, 245, 247;
+  --color-neutral-50: 250, 249, 247;
+  --color-neutral-100: 245, 245, 247;
+  --color-neutral-200: 229, 231, 235;
+  --color-neutral-300: 209, 213, 219;
+  --color-neutral-400: 156, 163, 175;
+  --color-neutral-500: 107, 114, 128;
+  --color-neutral-600: 75, 85, 99;
+  --color-neutral-700: 51, 51, 73;
+  --color-neutral-800: 30, 30, 52;
+  --color-neutral-900: 26, 26, 46;
+  /* Teal accent */
+  --color-primary-50: 240, 253, 250;
+  --color-primary-100: 204, 251, 241;
+  --color-primary-200: 153, 246, 228;
+  --color-primary-300: 94, 234, 212;
+  --color-primary-400: 45, 212, 191;
+  --color-primary-500: 13, 148, 136;
+  --color-primary-600: 10, 122, 112;
+  --color-primary-700: 15, 118, 110;
+  --color-primary-800: 17, 94, 89;
+  --color-primary-900: 20, 78, 74;
+  /* Slate secondary */
+  --color-secondary-50: 248, 250, 252;
+  --color-secondary-100: 241, 245, 249;
+  --color-secondary-200: 226, 232, 240;
+  --color-secondary-300: 203, 213, 225;
+  --color-secondary-400: 148, 163, 184;
+  --color-secondary-500: 107, 114, 128;
+  --color-secondary-600: 75, 85, 99;
+  --color-secondary-700: 51, 65, 85;
+  --color-secondary-800: 30, 41, 59;
+  --color-secondary-900: 15, 23, 42;
+}
