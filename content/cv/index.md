@@ -23,7 +23,7 @@ Madrid, Spain
 
 I build Data and AI companies.
 
-I'm currently CTO and COO of a group of three tech companies with presence in Spain and the US ([WhiteBox](https://whiteboxml.com), [DataMarket](https://datamarket.es), and FEN Technology). My focus has evolved from programming to organizational architecture, P&L management, and leading a high-performance team of 25+ engineers.
+I'm currently CTO of a group of three tech companies with presence in Spain and the US ([WhiteBox](https://whiteboxml.com), [DataMarket](https://datamarket.es), and FEN Technology). My focus has evolved from programming to organizational architecture, P&L management, and leading a high-performance team of 25+ engineers.
 
 **The Group:**
 
@@ -41,7 +41,7 @@ Industrial Engineer with an MBA. I bridge the gap between algorithmic complexity
 
 Greater Madrid Area
 
-As CTO and COO, I lead an AI and software development consultancy with over €1M annual revenue and a team of 25 engineers.
+As CTO, I lead an AI and software development consultancy with over €1M annual revenue and a team of 25 engineers.
 
 - **Executive Leadership:** Full P&L management, operations and talent strategy, acting as the main bridge between technology and business.
 - **Solution Architecture:** Technical leadership on key enterprise accounts, designing scalable AI architectures for clients like Vodafone, Mahou San Miguel, and El Corte Inglés.
