@@ -27,7 +27,7 @@ Nobody teaches you how to properly go to the doctor, and when you really need th
 skill (and believe me, you will) it's too late to fast-track it. So you'd better read
 this carefully, and apply it.
 
-## Part 1: Don't blindly trust the system. You're the only one in charge of your health.
+## Part 1: Don't blindly trust the system. You're the only one in charge of your health
 
 One of the most common traps many people fall into is blindly trusting the health
 system, which can extend to specific hospitals or doctors.
