@@ -4,11 +4,11 @@ Personal website and blog for David Adrián Cañones — CTO & Co-Founder at Whi
 
 ## Tech stack
 
-- **Static site generator**: Hugo extended (v0.155+), installed via conda env `hugo_env`
+- **Static site generator**: Hugo extended (v0.165, minimum v0.162 for Blowfish v3), installed via conda env `hugo_env`
 - **Theme**: [Blowfish](https://github.com/nunocoracao/blowfish) as a git submodule at `themes/blowfish/`
 - **Deployment**: GitHub Pages via GitHub Actions (`.github/workflows/gh-pages.yml`)
 - **Domain**: `davidadrian.cc` (DNS at Mr. Domain)
-- **Color scheme**: `ocean`
+- **Color scheme**: `brandbook` (custom, at `assets/css/schemes/brandbook.css`)
 
 ## Development
 
@@ -100,3 +100,4 @@ aliases:
 - **`unsafe = true`**: Set in goldmark renderer to handle any remaining HTML in content.
 - **Thumbnails hidden globally**: The `layouts/partials/article-link/simple.html` override removes thumbnails from all list views. Feature images still work for OG/social cards.
 - **Custom CSS**: `assets/css/custom.css` centers `figure` and `figcaption` elements.
+- **Theme customization is frozen against upgrades**: `layouts/partials/article-link/simple.html`, `home/profile.html`, `recent-articles/list.html`, and `recent-articles/main.html` are forks that carry the brandbook design (styled by `assets/css/custom.css`). They are intentionally not refreshed when the theme submodule is updated — check them by hand against upstream if a theme upgrade ships fixes worth porting.
