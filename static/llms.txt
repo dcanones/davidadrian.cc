@@ -21,6 +21,7 @@
 
 ## Blog Posts
 
+- [How to go to the doctor in 2026](https://davidadrian.cc/blog/how-to-go-to-the-doctor-in-2026/): Practical guide to preparing for consultations, owning your medical records, and self-advocacy in the healthcare system.
 - [The definitive guide to Python virtual environments with conda](https://davidadrian.cc/blog/the-definitive-guide-to-python-virtual-environments-with-conda/): Comprehensive tutorial on conda virtual environments — installation, management, sharing, packaging, and best practices.
 - [The online courses you must take to be a better Data Scientist](https://davidadrian.cc/blog/top-courses-data-science/): Curated list of the best online courses for Data Science, from Python to Deep Learning.
 - [The Definitive Data Scientist Environment Setup](https://davidadrian.cc/blog/definitive-data-scientist-setup/): Hardware and software setup guide for professional Data Science development environments.
