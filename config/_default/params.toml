@@ -44,3 +44,7 @@ enableStructuredBreadcrumbs = true
 
 [taxonomy]
   showTermCount = true
+
+[umamiAnalytics]
+  websiteid = "f28fc6ee-eec1-49e9-a094-91584392a643"
+  domain = "cloud.umami.is"
